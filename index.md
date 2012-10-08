@@ -17,6 +17,6 @@
 [01-basic-syntax]: ./01-BasicPythonSyntax.html
 [02-builtins]: ./02-Builtins.html
 [03-fileio]: ./03-FileIO.html
-[04-modules]: ./04-Modules.html
+[04-modules]: ./04-UsingModules.html
 [05-strings]: ./05-Strings.html
 [06-regex]: ./06-Regex.html

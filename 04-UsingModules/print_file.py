@@ -1,6 +1,6 @@
 def print_file_line_numbers(fp):
     for index, line in enumerate(fp):
-        print index + 1, line.rstrip()
+        print index + 1, line,
 
 import StringIO
 
