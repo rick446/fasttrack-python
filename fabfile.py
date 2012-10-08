@@ -26,7 +26,7 @@ def upload(name):
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="./index.shtml">MongoDB for Developers</a>
+          <a class="brand" href="./index.shtml">Fast Track to Python</a>
         </div>
       </div>
     </div>
@@ -34,10 +34,10 @@ def upload(name):
 <!--#include file="%s.html" -->
 </div>
 </body>
-</html>''' % name), '~/class.arborian.com/mongodb-devs/%s.shtml' % name)
+</html>''' % name), '~/class.arborian.com/fasttrack-python/%s.shtml' % name)
 
 def upload_html():
     for htmlfile in pathpy('.').glob('*.html'):
         print htmlfile.basename()
-        put(htmlfile, '~/class.arborian.com/mongodb-devs/%s' % htmlfile.basename())
+        put(htmlfile, '~/class.arborian.com/fasttrack-python/%s' % htmlfile.basename())
 

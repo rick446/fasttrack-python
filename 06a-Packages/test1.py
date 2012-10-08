@@ -1,0 +1,3 @@
+import mypackage
+
+print mypackage
