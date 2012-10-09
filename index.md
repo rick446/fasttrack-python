@@ -23,6 +23,10 @@
 - [Generators and Iterators][13-generators]
 - [Context Managers][14-context]
 
+## Day 3 notes
+- [Using Subprocesses][17-subprocess]
+- [Other Modules and Builtins][20-moremods]
+
 [slides]: ./FastTrackToPython.pdf
 [code]: ./code/fasttracktopython/
 [01-basic-syntax]: ./01-BasicPythonSyntax.html
@@ -39,3 +43,5 @@
 [12-decorators]: ./12-Decorators.html
 [13-generators]: ./13-GeneratorsAndIterators.html
 [14-context]: ./14-ContextManagers.html
+[17-subprocess]: ./17-Subprocess.html
+[20-moremods]: ./20-MoreModules.html
