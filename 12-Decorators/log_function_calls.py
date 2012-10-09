@@ -15,10 +15,11 @@ class log_call(object):
             result = function(*args, **kwargs)
             self._logger.log(
                 self._level, 'Exit %s => %r', function, result)
+            return result
         return wrapper
             
 @log_call(logging.getLogger('mylogger'), logging.ERROR)
 def will_log_to_error(a, b):
     return a + b
 
-will_log_to_error(1, 2)
+print will_log_to_error(1, 2)

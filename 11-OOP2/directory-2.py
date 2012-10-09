@@ -12,10 +12,6 @@ class Directory(object):
     def lookup_number(self, name):
         return self._directory[name]
 
-    def print_directory(self):
-        for name, number in self._directory.items():
-            print '%s: %s' % (name, number)
-
     def __getitem__(self, name):
         return self.lookup_number(name)
 
@@ -29,6 +25,7 @@ class Directory(object):
         l = ['<Directory>']
         for name, number in self._directory.items():
             l.append('    %s: %s' % (name, number))
+        l.append('</Directory>')
         return '\n'.join(l)
 
 class DefaultDirectory(Directory):
@@ -43,10 +40,20 @@ class DefaultDirectory(Directory):
         except KeyError:
             return self._default
 
+    def remove_number(self, name):
+        try:
+            super(DefaultDirectory, self).remove_number(name)
+        except KeyError:
+            print (
+                'Would have raised an exception deleting %s'
+                % name)
+            pass
+
     def __repr__(self):
         l = ['<DefaultDirectory(%r)>' % self._default]
         for name, number in self._directory.items():
             l.append('    %s: %s' % (name, number))
+        l.append('</DefaultDirectory>')
         return '\n'.join(l)
 
 d = Directory()
@@ -61,3 +68,4 @@ dd['Rick'] = '404.452.5202'
 print 'Rick: %s' % dd['Rick']
 print 'Stuart: %s' % dd['Stuart']
 print dd
+del dd['Stuart']

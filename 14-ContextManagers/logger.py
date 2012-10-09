@@ -28,3 +28,12 @@ with log_block(logging.getLogger('mylogger'), logging.ERROR):
     print 'Now inside the 2nd block'
     print 'still inside 2nd block'
     raise ValueError
+
+def log_decorator(logger, level=logging.INFO):
+    '''Just for fun'''
+    def decorator(function):
+        def wrapper(*args, **kwargs):
+            with log_block(logger, level):
+                return function(*args, **kwargs)
+        return wrapper
+    return decorator

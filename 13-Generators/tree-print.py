@@ -1,5 +1,7 @@
 mytree = ('root', 
-          ('child-L', (), ()), 
+          ('child-L',
+           ('child-LL', (), ()),
+           ('child-RR', (), ())),
           ('child-R', 
            ('child-RL', (), ()),
            ('child-RR', (), ())))

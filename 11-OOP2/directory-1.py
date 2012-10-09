@@ -12,10 +12,6 @@ class Directory(object):
     def lookup_number(self, name):
         return self._directory[name]
 
-    def print_directory(self):
-        for name, number in self._directory.items():
-            print '%s: %s' % (name, number)
-
     def __getitem__(self, name):
         return self.lookup_number(name)
 
@@ -29,6 +25,7 @@ class Directory(object):
         l = ['<Directory>']
         for name, number in self._directory.items():
             l.append('    %s: %s' % (name, number))
+        l.append('</Directory>')
         return '\n'.join(l)
 
 d = Directory()
