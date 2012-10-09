@@ -16,10 +16,8 @@ setup(name='MyDistutilsProject',
       packages=['mydistutilsproject'],
       include_package_data=True,
       zip_safe=False,
+      scripts=['test-script'],
       install_requires=[
           # -*- Extra requirements: -*-
       ],
-      entry_points="""
-      # -*- Entry points: -*-
-      """,
       )
