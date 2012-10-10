@@ -10,7 +10,7 @@ class MyTest(unittest.TestCase):
         self.assertEqual(simple_math.add(1, 1), 4)
 
     def test_one_and_one_fail_assert(self):
-        assert simple_math.add(1,2) == 4
+        assert simple_math.add(1,1) == 4
 
 if __name__ == '__main__':
     unittest.main()

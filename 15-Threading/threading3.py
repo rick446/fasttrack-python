@@ -14,7 +14,7 @@ def thread_target(x, y):
         log.info('%s', item)
     log.info('Exit')
 
-threads = [ threading.Thread(target=thread_target, args=(4,))
+threads = [ threading.Thread(target=thread_target, args=(x,4))
             for x in range(4) ]
 
 log.info('Daemonizing threads')

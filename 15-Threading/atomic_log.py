@@ -3,11 +3,12 @@ import threading
 
 log_mutex = threading.Lock()
 
-def log(message):
+def log(message, *args):
     with log_mutex:
-        slow_log(message)
+        slow_log(message, *args)
 
-def slow_log(message):
+def slow_log(message, *args):
+    message = message % args
     for ch in message:
         sys.stdout.write(ch)
         sys.stdout.flush()
@@ -16,7 +17,7 @@ def slow_log(message):
 
 def target(x):
     for y in range(4):
-        log('(x,y) is (%d, %d)' % (x,y))
+        log('(x,y) is (%d, %d)',x,y)
 
 threads = [ threading.Thread(target=target, args=(x,))
             for x in range(4) ]

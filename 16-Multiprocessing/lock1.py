@@ -1,3 +1,4 @@
+import time
 import logging
 import multiprocessing
 
@@ -14,6 +15,7 @@ def target(y):
     with lock:
         log.info('Enter')
         for item in range(y):
+            time.sleep(0.1)
             log.info('%s', item)
         log.info('Exit')
 

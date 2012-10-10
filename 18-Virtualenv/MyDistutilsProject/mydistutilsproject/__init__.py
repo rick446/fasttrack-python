@@ -1,1 +1,3 @@
 #
+def foo():
+    print 'bar'
