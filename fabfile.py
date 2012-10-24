@@ -21,6 +21,7 @@ def upload(name):
     put(StringIO('''<html>
 <head>
 <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="/friendly.css">
 </head>
 <body>
     <div class="navbar">
