@@ -20,5 +20,12 @@ def remove_number_alt(directory, name):
     except KeyError:
         pass # ignore KeyError
 
+def lookup_number_alt(directory, name):
+    try:
+        return directory[name]
+    except KeyError:
+        return 'Undefined number'
+
+print "Nobody's number:", lookup_number_alt(directory, 'Nobody')
 remove_number_alt(directory, 'Nobody')
 print directory
