@@ -1,2 +1,2 @@
 print 'importing mypackage'
-import mysubpackage
+# import mysubpackage

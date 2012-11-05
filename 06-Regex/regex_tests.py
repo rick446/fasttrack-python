@@ -15,12 +15,12 @@ computer scientists have dealt with since the days of IBM mainframes.'''
 import StringIO
 print 'Integers:', find_integers(StringIO.StringIO(text))
 
-re_capword = re.compile(r"(\W|^)([A-Z][A-Za-z']*)")
+re_capword = re.compile(r"\b([A-Z][A-Za-z']*)")
 def find_capwords(fp):
     result = []
     for line in fp:
         for match in re_capword.finditer(line):
-            result.append(match.group(2))
+            result.append(match.group(1))
     return result
     
 print 'Capwords:', find_capwords(StringIO.StringIO(text))

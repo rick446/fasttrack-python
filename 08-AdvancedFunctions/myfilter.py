@@ -8,4 +8,3 @@ def myfilter(function, sequence):
 print myfilter(lambda x: x%2==0, range(10))
 print myfilter(lambda x: x%2==1, range(10))
 
-## Talk about "truthy" values

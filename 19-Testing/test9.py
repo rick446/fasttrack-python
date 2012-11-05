@@ -1,5 +1,18 @@
 import doctest
 
+def concat(values):
+    '''Concatenate multiple strings
+
+    >>> concat(['foo', 'bar', 'baz'])
+    'foobarbaz'
+    >>> concat(['foo', ' bar ', 'baz'])
+    'foo bar baz'
+    '''
+    result = ''
+    for value in values:
+        result += value
+    return result
+
 def average(values):
     """Computes the arithmetic mean of a list of numbers.
 

@@ -11,7 +11,8 @@ class log_call(object):
     def __call__(self, function):
         def wrapper(*args, **kwargs):
             self._logger.log(
-                self._level, 'Enter %s(*%r, **%r)', function, args, kwargs)
+                self._level, 'Enter %s(*%r, **%r)',
+                function, args, kwargs)
             result = function(*args, **kwargs)
             self._logger.log(
                 self._level, 'Exit %s => %r', function, result)

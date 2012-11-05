@@ -1,7 +1,7 @@
 # Fast Track to Python
 
 - [Slides][slides]
-- [Code][code]
+- [Code][code] [(archive of all code examples)][archive]
 
 ## Day 1 notes
 
@@ -29,6 +29,7 @@
 
 [slides]: ./FastTrackToPython.pdf
 [code]: ./code/fasttracktopython/
+[archive]: ./code/CodeExamples.tar.gz
 [01-basic-syntax]: ./01-BasicPythonSyntax.html
 [02-builtins]: ./02-Builtins.html
 [03-fileio]: ./03-FileIO.html

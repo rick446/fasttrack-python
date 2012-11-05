@@ -12,7 +12,7 @@ def get_words_count(fp):
     result = {}
     for line in fp:
         for word in line.split():
-            word = ''.join(filter(isalpha, word.lower()))
+            word = filter(isalpha, word.lower())
             if word in result:
                 result[word] += 1
             else:

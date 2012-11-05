@@ -12,7 +12,8 @@ def get_words(fp):
     result = []
     for line in fp:
         for word in line.split():
-            word = ''.join(filter(isalpha, word.lower()))
+            word = word.lower()
+            word = filter(isalpha, word)
             result.append(word)
     return result
 

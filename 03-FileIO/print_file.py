@@ -13,5 +13,3 @@ def print_file_line_numbers(fp):
 fp = open('/etc/hosts')
 print_file_line_numbers(fp)
 fp.close()
-
-        
