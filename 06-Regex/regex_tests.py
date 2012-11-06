@@ -1,11 +1,11 @@
 import re
-re_integer = re.compile(r'(\d+)')
+re_integer = re.compile(r'\d+')
 
 def find_integers(fp):
     result = []
     for line in fp:
         for match in re_integer.finditer(line):
-            result.append(int(match.group(1)))
+            result.append(int(match.group(0)))
     return result
 
 text = '''The 42nd number in a list of integers starting at
