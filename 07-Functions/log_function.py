@@ -4,8 +4,9 @@ def log(format, *args, **kwargs):
     else:
         print format % kwargs
 
-log('The pair is (%r,%r)', 1, 2)
-log('The value of a is %(a)r', a='foo')
-log('The value of a is %(a)r', **{'a': 'foo'})
+if __name__ == '__main__':
+    log('The pair is (%r,%r)', 1, 2)
+    log('The value of a is %(a)r', a='foo')
+    log('The value of a is %(a)r', **{'a': 'foo'})
 
-log('This does not have any arguments')
+    log('This does not have any arguments')

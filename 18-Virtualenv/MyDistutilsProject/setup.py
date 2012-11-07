@@ -17,7 +17,7 @@ setup(name='MyDistutilsProject',
       include_package_data=True,
       zip_safe=False,
       scripts=['test-script'],
-      install_requires=[
+      install_requires=[ 
           # -*- Extra requirements: -*-
       ],
       )
