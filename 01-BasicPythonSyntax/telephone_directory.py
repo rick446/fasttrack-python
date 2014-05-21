@@ -13,6 +13,7 @@ print lookup_number(directory, 'Rick')
 print directory
 remove_number(directory, 'Rick')
 print directory
+print '-----------'*5
 
 def remove_number_alt(directory, name):
     try:

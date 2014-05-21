@@ -9,6 +9,6 @@ def sayhello3(name):
     print 'Hello,',  # no \n at end
     print name
 
-sayhello('VMware')
-sayhello2('VMware')
-sayhello3('VMware')
+sayhello('FastTrack')
+sayhello2('FastTrack')
+sayhello3('FastTrack')
