@@ -1,8 +1,8 @@
-= Fast Track to Python
+# Fast Track to Python
 
 This is the home of the Fast Track to Python class files.
 
-== Setup Instructions
+## Setup Instructions
 
 My examples will all be running in an Ubuntu virtual machine managed by Vagrant.
 If you want to have the exact same environment as I'm running (same version of
@@ -22,7 +22,7 @@ vagrant@precise64~$ ./src/fasttrack-python/setup-environ.bash
 vagrant@precise64~$ exit
 ~~~~
 
-== Recordings
+## Recordings
 
 The videos will be posted here as they become available.
 
