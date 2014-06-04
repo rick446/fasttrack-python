@@ -15,9 +15,10 @@ Once you have these, you'll want to clone this repository and run a couple of co
 
 ~~~~
 git clone https://github.com/rick446/fasttrack-python.git
-
+cd fasttrack-python
 vagrant up    # This imports and boots the virtual machine
 vagrant ssh   # This logs you into the virtual machine
+
 vagrant@precise64~$ ./src/fasttrack-python/setup-environ.bash
 vagrant@precise64~$ exit
 ~~~~
