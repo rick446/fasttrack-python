@@ -18,5 +18,5 @@ def get_words_count(fp):
             else:
                 result[word] = 1
     return result
-    
+
 print get_words_count(StringIO.StringIO(text))

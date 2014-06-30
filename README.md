@@ -29,3 +29,4 @@ The videos will be posted here as they become available.
 
 - [Session 1](https://www.youtube.com/watch?v=CfbjnC_oL3M)
 - [Session 2](https://www.youtube.com/watch?v=FjwKuVQnF4c)
+- [Session 3](https://www.youtube.com/watch?v=zsdzvTv4qdk)
